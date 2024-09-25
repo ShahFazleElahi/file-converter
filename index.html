@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>File Converter</h1>
+    <form id="conversionForm">
+        <input type="file" id="fileInput" accept=".jpg,.pdf,.docx,.pptx" required>
+        <select id="conversionType">
+            <option value="jpg_to_pdf">JPG to PDF</option>
+            <option value="pdf_to_word">PDF to Word</option>
+            <option value="word_to_pptx">Word to PPTX</option>
+        </select>
+        <button type="submit">Convert</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
